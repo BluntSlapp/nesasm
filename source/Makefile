@@ -1,3 +1,7 @@
+ROOT = .
+include $(ROOT)/rules.armm0
+LINKER_OPT += -lcurses$(PLATFORM) -ltermcap$(PLATFORM) -lc$(PLATFORM)
+
 RM       = rm -f
 CC       = gcc
 
